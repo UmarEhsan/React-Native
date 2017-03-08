@@ -13,7 +13,7 @@
 
 
 <h3>Development Environment</h3>
-1)Windows
+<h2>Windows</h2><br>
   a)Android Studio<br>
   b)Android SDK(6.0 Marshmallow)<br>
   c)Android AVD<br>
@@ -29,3 +29,21 @@ Open your command prompt(cmd) and run
 
 create your app by following command
 react-native init "App Name"
+
+<p>navigate to your project</p> 
+<p>cd "App Name" then run react-native start inside the newly created folder to start the packager.</p>
+<p>Open a new command prompt and run <strong>react-native run-android</run> inside the same folder to launch the app on your AVD.</p>
+
+<p>If you get any error something like this<br>
+* What went wrong:<br>
+A problem occurred configuring project ':app'.<br>
+> SDK location not found. Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.<br></p>
+
+<h4>Solution</h4><br>
+
+<ul>
+<li>Go to the android/ directory of your react-native project<li>
+<li>Create a file called local.properties with this line:</li>
+</ul>
+<p>sdk.dir=C\:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk<br>
+properly write this formate, and also check / slas using for path</p>
